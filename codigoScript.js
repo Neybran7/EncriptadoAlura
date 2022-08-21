@@ -3,9 +3,6 @@ const mensaje = document.querySelector(".mensaje");
 const btnCopy = document.querySelector(".copiar");
 btnCopy.style.display = "none"
 
-
-
-
 function btnEncriptar() {
     const textoEncriptado = encriptar(inputTexto.value)
     mensaje.value = textoEncriptado
@@ -14,7 +11,6 @@ function btnEncriptar() {
     btnCopy.style.display = "block"
 
 }
-
 function encriptar(stringEncriptada) {
     let matrizCodigo = [["e", "enter"], ["i", "imes"], ["a", "ai"], ["o","ober"], ["u","ufat"]];
     stringEncriptada = stringEncriptada.toLowerCase();
@@ -25,13 +21,8 @@ function encriptar(stringEncriptada) {
         }                
     }
     return stringEncriptada;
-
-    
+   
 }
-
-
-
-
 function btnDesencriptar() {
     const textoEncriptado = desencriptar(inputTexto.value)
     mensaje.value = textoEncriptado
@@ -50,9 +41,6 @@ function desencriptar(stringDesencriptada) {
 
     return stringDesencriptada;
 }
-
-
-
 function copiar() {
     
     mensaje.select();
